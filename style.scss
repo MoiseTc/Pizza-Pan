@@ -5,36 +5,41 @@
 }
 
 header{
-    background-color: yellow;
-    height: 15vh;
+    background-color: white;
+    height: 10vh;
+    position: fixed;
+    width: 100vw;
+    color: black;
+    padding: 1.1rem;
     .navbar{
         display: flex;
-        padding: 2rem;
+        padding: .7rem 5.5rem;
+        
     }
     ul{
         list-style: none;
         display: flex;
-        margin: 0rem;
         margin-left: auto;
 
-       
         li{
-            padding: 1rem;
-
+            padding-left: 1.3rem;
             &:hover{
-                color: black;
+                color: rgb(207, 39, 39);
                 text-decoration: black;
             }
         }
       }
     a{
         text-decoration: none;
-        color: white;
+        color:black;
 
         &:hover{
-            color: black;
+            color: rgb(240, 224, 224);
             text-decoration: black;
         }
+    }
+    .logo{
+        color: red;
     }
 
     i{
@@ -46,18 +51,21 @@ header{
         font-size: 1.4rem;
         padding: .3rem 1.1rem;
         border-radius: 2rem;
+        border: none;
+        background-color: yellow;
+        text-align: center;
     }
 }
 .Landing-page{
     background-color: red;
-    height: 110vh;
-
+    height: 100vh;
     ul{
         list-style: none;
         display: flex;
-        padding: 4rem;
+        padding: 5rem 2rem 2rem 0rem;
         li{
            color: yellow;
+           padding: 1.9rem;
         }
 
         .worth{
@@ -65,13 +73,24 @@ header{
             color: white;
 
            h1{
-               border: solid;
+               position: absolute;
+               border:none;
                border-radius: 50%;
                width: 6rem;
                height: 5.5rem;
                padding: .9rem;
                background-color: yellow;
+               text-align: center;
 
+               a{
+                   text-decoration: none;
+                   color: red;
+               }
+
+           }
+           img{
+               margin-bottom: 19rem;
+               height: 75vh;
            }
         }
     }
@@ -87,6 +106,9 @@ header{
            
             font-size: 6.8rem;
         }
+        .button{
+            padding: 2rem;
+        }
 
         button{
             font-size: 1.4rem;
@@ -94,6 +116,155 @@ header{
             border-radius: 2rem;
             background-color: yellow;
             border: none;
+            text-align: center;
+        }
+    }
+}
+main{
+    background-color: white;
+    height: 60vh;
+   display: flex;
+   text-decoration: none;
+   padding: 3.5rem;
+   .about{
+       padding: 4rem;
+       margin-right: 4rem;
+       h1{
+           font-size: 2.8rem;
+           font-weight: 2rem;
+           margin-bottom: 1.5rem;
+       }
+
+       h3{
+           font-size: 1.5rem;
+           margin-bottom: 1.2rem;
+       }
+
+       p{
+           font-size: 1.2rem;
+           font-weight: 300;
+           margin-bottom: 2.2rem;
+       }
+
+       button{
+        font-size: 1.4rem;
+        padding: .3rem 1.1rem;
+        border-radius: 2rem;
+        border: none;
+        background-color: red;
+       }
+   }
+
+   .Food{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 2rem;
+       padding: 4rem;
+       font-size: 1.5rem;
+
+       i{
+           color: red;
+           border-radius: 1.5rem;
+           background-color: gray;
+           padding: .5rem;
+           border: none;
+       }
+   }
+}
+.page3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+    padding: 4.5rem;
+    height: 50vh;
+
+    h1{
+        padding-bottom: 1.5rem;
+        font-size: 2.4rem;
+    }
+
+    p{
+        padding-bottom: 1.5rem;
+        line-height: 2rem;
+    }
+
+    button{
+        font-size: 1.4rem;
+        padding: .3rem 1.1rem;
+        border-radius: 2rem;
+        border: none;
+        background-color: red;
+    }
+
+    img{
+        height: 60vh;
+    }
+    
+}
+
+.page4{
+    padding: 4.5rem;
+
+    .art{
+        text-align: center;
+    }
+
+    .Gallery{
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+        grid-gap: 1rem;
+        padding: 1rem;
+
+       .item1{
+           grid-row: 1/6;
+           
+           img{
+               padding-top: 4rem;
+               height: 50vh;
+           }
+       }
+
+       .item2{
+        img{
+            height: 23rem;
+            width: 20rem;
+        }
+    }
+    .item3{
+        padding-bottom: 0;
+        width: 18rem;
+        min-height: 5rem;
+        img{
+            max-height: 25rem;
+            max-width: 100%;
+        }
+    }
+    }
+
+    .item4{
+        position: relative;
+            img{
+            position: absolute;
+            bottom: -.5rem;
+            height: 21rem;
+            width: 21rem;
+            left: -.5rem;
+        }
+    }
+
+ 
+    .item5{
+        
+        img{
+            height: 14rem;
+        }
+    }
+    .item6{
+        position: relative;
+        img{
+            position: absolute;
+            width: 100%;
+            top: -10.5rem;
         }
     }
 }
