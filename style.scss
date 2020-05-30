@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Spartan', sans-serif;
+
+}
+
+body{
+    overflow:hidden;
 }
 
 header{
@@ -49,13 +54,14 @@ header{
     }
 
     i{
-        font-size: 2.1rem;
+        font-size: 1rem;
         color: red;
         margin-top: -1rem;
     }
 
+
     button{
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding: .3rem 1.1rem;
         border-radius: 2rem;
         border: none;
@@ -116,12 +122,12 @@ header{
             font-weight: 800;
         }
         .button{
-            padding: 2rem;
+            padding: 1rem;
         }
 
         button{
-            font-size: 1.4rem;
-            padding: .3rem 1.1rem;
+            font-size: .9rem;
+            padding: .4rem 1.1rem;
             border-radius: 2rem;
             background-color: yellow;
             border: none;
@@ -134,7 +140,7 @@ main{
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-gap: 4rem;
-   padding: 2.5rem;
+   padding: 3rem;
    .about{
        h1{
            font-size: 3.4rem;
@@ -152,19 +158,22 @@ main{
        p{
            font-size: 1.0rem;
            font-weight: 400;
-           margin-bottom: 2.2rem;
+           margin-bottom: 2.4rem;
            color: #888888;
        }
 
        button{
-        font-size: 1.1rem;
-        padding: .5rem 1.1rem;
+        font-size: .9rem;
+        cursor: pointer;
+        padding: .8rem 1.2rem;
         border-radius: 2rem;
         border: none;
         background-color: red;
         color: white;
 
-        
+        &:hover{
+            background-color: darken($color:red, $amount: 5%);
+        }
        }
    }
 
@@ -172,8 +181,7 @@ main{
        display: grid;
        grid-template-columns: 1fr 1fr;
        grid-gap: .5rem;
-       font-size: 2rem;
-       margin-right: 4rem;
+       font-size: 1rem;
 
        i{
            color: red;
@@ -181,36 +189,38 @@ main{
            background-color:#FEF5F4;
            padding: .5rem;
            border: none;
-           font-size: 1.8rem;
+           font-size: 1.4rem;
        }
 
        p{
-           font-size: 1.5rem;
+           font-size: 1.2rem;
       }
    }
 }
 .page3{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 2.3rem;
-    padding: 4.5rem;
-    margin-top: 1rem;
-    padding-top: 1rem;
+    grid-gap: 2rem;
+    padding: 5.5rem;
+    margin-top: 3rem;
     height: 70vh;
     background-color: #F8F9FA;
 
 
     h1{
-        padding-bottom: 3rem;
-        font-size: 1.7rem;
+        padding-bottom: 1rem;
+        font-size: 1.3rem;
         padding-top: 1rem;
         font-weight: 600;
     }
 
     p{
-        padding-bottom: 1.2rem;
-        font-size: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.rem;
         color: #888888;
+    }
+    .book{
+        padding-top: 1.9rem;
     }
 
 
@@ -238,8 +248,7 @@ main{
 }
 
 .page4{
-    padding: 4.5rem;
-
+    padding-top: 3rem;
     img{
 
         border: none;
@@ -264,13 +273,11 @@ main{
         display: grid;
         grid-template-columns:repeat(4, 1fr);
         grid-gap: 1rem;
-        padding: 1rem;
 
        .item1{
            grid-row: 1/6;
            
            img{
-               padding-top: 4rem;
                height: 57vh;
                width: 19rem;
                border-radius: 2rem; 

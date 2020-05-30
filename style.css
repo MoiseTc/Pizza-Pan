@@ -60,13 +60,13 @@ header .logo {
 }
 
 header i {
-  font-size: 2.1rem;
+  font-size: 1rem;
   color: red;
   margin-top: -1rem;
 }
 
 header button {
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: .3rem 1.1rem;
   border-radius: 2rem;
   border: none;
@@ -135,12 +135,12 @@ header button {
 }
 
 .Landing-page .part1 .button {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .Landing-page .part1 button {
-  font-size: 1.4rem;
-  padding: .3rem 1.1rem;
+  font-size: .9rem;
+  padding: .4rem 1.1rem;
   border-radius: 2rem;
   background-color: yellow;
   border: none;
@@ -154,7 +154,7 @@ main {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 4rem;
-  padding: 2.5rem;
+  padding: 4rem;
 }
 
 main .about h1 {
@@ -173,17 +173,22 @@ main .about h3 {
 main .about p {
   font-size: 1.0rem;
   font-weight: 400;
-  margin-bottom: 2.2rem;
+  margin-bottom: 2.4rem;
   color: #888888;
 }
 
 main .about button {
-  font-size: 1.1rem;
-  padding: .5rem 1.1rem;
+  font-size: .9rem;
+  cursor: pointer;
+  padding: .8rem 1.2rem;
   border-radius: 2rem;
   border: none;
   background-color: red;
   color: white;
+}
+
+main .about button:hover {
+  background-color: #e60000;
 }
 
 main .Food {
@@ -192,8 +197,7 @@ main .Food {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: .5rem;
-  font-size: 2rem;
-  margin-right: 4rem;
+  font-size: 1rem;
 }
 
 main .Food i {
@@ -202,11 +206,11 @@ main .Food i {
   background-color: #FEF5F4;
   padding: .5rem;
   border: none;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 
 main .Food p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .page3 {
@@ -214,25 +218,28 @@ main .Food p {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 2.3rem;
-  padding: 4.5rem;
-  margin-top: 1rem;
-  padding-top: 1rem;
+  grid-gap: 2rem;
+  padding: 5.5rem;
+  margin-top: 3rem;
   height: 70vh;
   background-color: #F8F9FA;
 }
 
 .page3 h1 {
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   font-size: 1.7rem;
   padding-top: 1rem;
   font-weight: 600;
 }
 
 .page3 p {
-  padding-bottom: 1.2rem;
-  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-size: .9rem;
   color: #888888;
+}
+
+.page3 .book {
+  padding-top: 1.9rem;
 }
 
 .page3 button {
