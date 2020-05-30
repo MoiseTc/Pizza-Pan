@@ -19,6 +19,7 @@ header .navbar {
   display: -ms-flexbox;
   display: flex;
   padding: .6rem 5.6rem;
+  width: 100%;
 }
 
 header ul {
@@ -27,6 +28,10 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+}
+
+header ul .ted {
+  padding-top: .5rem;
 }
 
 header ul li {
@@ -45,9 +50,9 @@ header a {
 }
 
 header a:hover {
-  color: #f0e0e0;
   -webkit-text-decoration: black;
           text-decoration: black;
+  color: red;
 }
 
 header .logo {
@@ -70,7 +75,7 @@ header button {
 }
 
 .Landing-page {
-  background-color: red;
+  background-color: #E7272D;
   height: 100vh;
 }
 
@@ -96,11 +101,12 @@ header button {
   position: absolute;
   border: none;
   border-radius: 50%;
-  width: 8rem;
-  height: 7.5rem;
+  width: 6rem;
+  height: 5.5rem;
   padding: .9rem;
   background-color: yellow;
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .Landing-page ul .worth h1 a {
@@ -118,12 +124,14 @@ header button {
 }
 
 .Landing-page .part1 h3 {
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .Landing-page .part1 h2 {
   padding-top: 1rem;
-  font-size: 6.8rem;
+  font-size: 5.5rem;
+  color: white;
+  font-weight: 800;
 }
 
 .Landing-page .part1 .button {
@@ -141,42 +149,41 @@ header button {
 
 main {
   background-color: white;
-  height: 60vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-decoration: none;
-  padding: 3.5rem;
-}
-
-main .about {
-  padding: 4rem;
-  margin-right: 4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
+  padding: 2.5rem;
 }
 
 main .about h1 {
-  font-size: 2.8rem;
-  font-weight: 2rem;
+  font-size: 3.4rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 main .about h3 {
   font-size: 1.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
+  color: #999999;
+  font-weight: 500;
 }
 
 main .about p {
-  font-size: 1.2rem;
-  font-weight: 300;
+  font-size: 1.0rem;
+  font-weight: 400;
   margin-bottom: 2.2rem;
+  color: #888888;
 }
 
 main .about button {
-  font-size: 1.4rem;
-  padding: .3rem 1.1rem;
+  font-size: 1.1rem;
+  padding: .5rem 1.1rem;
   border-radius: 2rem;
   border: none;
   background-color: red;
+  color: white;
 }
 
 main .Food {
@@ -184,17 +191,22 @@ main .Food {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
-  padding: 4rem;
-  font-size: 1.5rem;
+  grid-gap: .5rem;
+  font-size: 2rem;
+  margin-right: 4rem;
 }
 
 main .Food i {
   color: red;
   border-radius: 1.5rem;
-  background-color: gray;
+  background-color: #FEF5F4;
   padding: .5rem;
   border: none;
+  font-size: 1.8rem;
+}
+
+main .Food p {
+  font-size: 1.5rem;
 }
 
 .page3 {
@@ -202,19 +214,25 @@ main .Food i {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3rem;
+  grid-gap: 2.3rem;
   padding: 4.5rem;
-  margin-top: 6rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  height: 70vh;
+  background-color: #F8F9FA;
 }
 
 .page3 h1 {
-  padding-bottom: 1.5rem;
-  font-size: 2.4rem;
+  padding-bottom: 3rem;
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  font-weight: 600;
 }
 
 .page3 p {
-  padding-bottom: 1.5rem;
-  line-height: 2rem;
+  padding-bottom: 1.2rem;
+  font-size: 1rem;
+  color: #888888;
 }
 
 .page3 button {
@@ -222,19 +240,42 @@ main .Food i {
   padding: .3rem 1.1rem;
   border-radius: 2rem;
   border: none;
-  background-color: red;
+  background-color: #E7262D;
+  color: white;
+}
+
+.page3 button:hover {
+  background-color: #c4161c;
+  color: white;
 }
 
 .page3 img {
-  height: 60vh;
+  height: 25rem;
+  border: none;
+  border-radius: 1rem;
 }
 
 .page4 {
   padding: 4.5rem;
 }
 
+.page4 img {
+  border: none;
+  border-radius: 1rem;
+}
+
 .page4 .art {
   text-align: center;
+}
+
+.page4 .art h2 {
+  color: #999999;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.page4 .art h1 {
+  font-size: 2rem;
 }
 
 .page4 .Gallery {
@@ -254,7 +295,9 @@ main .Food i {
 
 .page4 .Gallery .item1 img {
   padding-top: 4rem;
-  height: 50vh;
+  height: 57vh;
+  width: 19rem;
+  border-radius: 2rem;
 }
 
 .page4 .Gallery .item2 img {
@@ -264,7 +307,7 @@ main .Food i {
 
 .page4 .Gallery .item3 {
   padding-bottom: 0;
-  width: 18rem;
+  width: 19rem;
   min-height: 5rem;
 }
 
@@ -296,11 +339,28 @@ main .Food i {
 .page4 .item6 img {
   position: absolute;
   width: 100%;
-  top: -10.5rem;
+  top: -9.5rem;
 }
 
 .page5 {
   padding: 2rem;
+  background-color: #F8F9FA;
+}
+
+.page5 .recipies {
+  text-align: center;
+}
+
+.page5 .recipies h1 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+.page5 .recipies h2 {
+  color: #999999;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 1rem;
 }
 
 .page5 .recipies ul {
@@ -311,7 +371,33 @@ main .Food i {
 }
 
 .page5 .recipies ul li {
-  padding: 1rem;
+  margin: 1rem;
+  border: none;
+  border-radius: .5rem;
+  background: white;
+}
+
+.page5 .recipies ul li:hover {
+  -webkit-transition-delay: .10s;
+          transition-delay: .10s;
+  background-color: red;
+}
+
+.page5 .recipies ul li:hover h1 {
+  color: white;
+}
+
+.page5 .recipies ul li:hover h3 {
+  color: white;
+}
+
+.page5 .recipies ul li:hover h4 {
+  color: white;
+}
+
+.page5 .recipies ul li:hover .order button {
+  background-color: white;
+  color: red;
 }
 
 .page5 .recipies ul li .center {
@@ -320,17 +406,19 @@ main .Food i {
 
 .page5 .recipies ul li .center img {
   padding-top: 1rem;
-  height: 17rem;
+  height: 14rem;
+  width: 15rem;
   border-radius: 1.5rem;
+  margin-bottom: 1.9rem;
 }
 
 .page5 .recipies ul li h1 {
   padding: .5rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 .page5 .recipies ul li h4 {
-  padding-top: 1rem;
+  padding-top: .8rem;
   padding-bottom: 1rem;
   text-align: center;
   color: gray;
@@ -351,6 +439,150 @@ main .Food i {
   padding: .4rem 1.0rem;
   border-radius: 2rem;
   border: none;
-  background-color: white;
+  background-color: red;
+}
+
+.page6 {
+  padding: 5rem;
+}
+
+.page6 .clients {
+  text-align: center;
+  padding: 3rem;
+  padding-top: 2rem;
+}
+
+.page6 .clients h4 {
+  color: #999999;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.page6 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.page6 ul li {
+  padding: 1rem;
+}
+
+.page6 ul li p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-right: 4rem;
+}
+
+.page6 ul li h1 {
+  padding-top: 2rem;
+  font-size: 2.3rem;
+}
+
+.page6 ul li h3 {
+  font-size: 1.3rem;
+  color: #888888;
+  font-weight: 400;
+}
+
+footer {
+  background-color: #212529;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  padding: 0;
+  color: white;
+}
+
+footer .last {
+  padding: 4rem;
+}
+
+footer .last ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+footer .last ul li {
+  padding: 2rem;
+}
+
+footer .last ul li p {
+  padding-top: 1rem;
+  padding-bottom: .3rem;
+  color: #999999;
+  font-size: 1.2rem;
+}
+
+footer .last ul li .open {
+  padding-left: 3rem;
+  padding-right: 5rem;
+}
+
+footer .last ul li .open P {
+  font-size: 1rem;
+}
+
+footer .last ul li a {
+  text-decoration: none;
+  color: #999999;
+  font-size: 1.3rem;
+}
+
+footer .last ul li a:hover {
+  color: yellow;
+}
+
+footer .last ul .middle1 {
+  border: solid;
+  border-width: .1rem;
+  border-top: none;
+  border-bottom: none;
+}
+
+footer .last ul .middle2 {
+  border-right: solid;
+  border-width: .1rem;
+}
+
+footer .divider {
+  padding: 2rem;
+}
+
+footer .divider hr {
+  border: none;
+  color: #999999;
+  background-color: #999999;
+  height: .1rem;
+}
+
+footer .clone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2rem;
+}
+
+footer .clone .reserved {
+  color: white;
+  font-size: 1.2rem;
+  color: #bbbbbb;
+  font-size: 400;
+}
+
+footer .clone .social {
+  margin-left: auto;
+}
+
+footer .clone .social i {
+  padding-right: 1rem;
+  font-size: 1.2rem;
+  color: #999999;
+}
+
+footer .clone .social i:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
