@@ -8,14 +8,26 @@ body {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 70%;
+  }
+}
+
 header {
   background-color: white;
   height: 12vh;
   position: fixed;
   width: 100vw;
-  color: black;
   padding: 1.1rem;
   z-index: 5;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    padding: .5rem;
+  }
 }
 
 header .navbar {
@@ -23,6 +35,12 @@ header .navbar {
   display: -ms-flexbox;
   display: flex;
   padding: .6rem 5.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header .navbar {
+    padding: .5rem 1.6rem;
+  }
 }
 
 header ul {
@@ -39,6 +57,12 @@ header ul .ted {
 
 header ul li {
   padding-left: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header ul li {
+    padding-left: 1rem;
+  }
 }
 
 header ul li:hover {
@@ -62,10 +86,22 @@ header .logo {
   color: red;
 }
 
+@media only screen and (max-width: 768px) {
+  header .logo h1 {
+    font-size: 1.3rem;
+  }
+}
+
 header i {
   font-size: 1.5rem;
   color: red;
   margin-top: -1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  header i {
+    font-size: 1rem;
+  }
 }
 
 header button {
@@ -75,6 +111,12 @@ header button {
   border: none;
   background-color: yellow;
   text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  header button {
+    font-size: .8rem;
+  }
 }
 
 .Landing-page {
@@ -90,9 +132,21 @@ header button {
   padding: 5rem 2rem 2rem 0rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .Landing-page ul {
+    padding: 3rem .5rem 1rem 0;
+  }
+}
+
 .Landing-page ul li {
   color: yellow;
   padding: 1.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .Landing-page ul li {
+    padding: 1.3rem;
+  }
 }
 
 .Landing-page ul .worth {
@@ -100,26 +154,43 @@ header button {
   color: white;
 }
 
-.Landing-page ul .worth h1 {
+.Landing-page ul .worth .circle {
   position: absolute;
-  border: none;
   border-radius: 50%;
-  width: 6rem;
-  height: 5.5rem;
-  padding: .9rem;
+  height: 100px;
+  width: 100px;
+  padding: 1rem;
   background-color: yellow;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
-.Landing-page ul .worth h1 a {
-  text-decoration: none;
+@media only screen and (max-width: 768px) {
+  .Landing-page ul .worth .circle {
+    font-size: .9rem;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.Landing-page ul .worth .circle p {
+  margin-bottom: 0;
+}
+
+.Landing-page ul .worth .circle .price {
   color: red;
 }
 
 .Landing-page ul .worth img {
   margin-bottom: 19rem;
   height: 75vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .Landing-page ul .worth img {
+    height: 70vh;
+    margin-bottom: 15rem;
+  }
 }
 
 .Landing-page .part1 {
@@ -130,6 +201,12 @@ header button {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .Landing-page .part1 h3 {
+    font-size: .9rem;
+  }
+}
+
 .Landing-page .part1 h2 {
   padding-top: 1rem;
   font-size: 5.5rem;
@@ -137,8 +214,20 @@ header button {
   font-weight: 800;
 }
 
+@media only screen and (max-width: 768px) {
+  .Landing-page .part1 h2 {
+    font-size: 3.8rem;
+  }
+}
+
 .Landing-page .part1 .button {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .Landing-page .part1 .button {
+    padding: .5rem;
+  }
 }
 
 .Landing-page .part1 button {
@@ -150,6 +239,12 @@ header button {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .Landing-page .part1 button {
+    font-size: .7rem;
+  }
+}
+
 main {
   background-color: white;
   display: -ms-grid;
@@ -158,6 +253,7 @@ main {
       grid-template-columns: 1fr 1fr;
   grid-gap: 4rem;
   padding: 3rem;
+  overflow-x: hidden;
 }
 
 main .about h1 {
