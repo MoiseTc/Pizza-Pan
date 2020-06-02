@@ -1012,7 +1012,7 @@ main .Food p {
 @media only screen and (max-width: 400px) {
   .page5 .recipies ul li .center img {
     height: 14rem;
-    width: 17rem;
+    width: 15rem;
   }
 }
 
@@ -1196,8 +1196,8 @@ main .Food p {
 
 @media only screen and (max-width: 400px) {
   .page6 ul li img {
-    height: 24rem;
-    width: 22rem;
+    height: 20rem;
+    width: 24rem;
   }
 }
 
