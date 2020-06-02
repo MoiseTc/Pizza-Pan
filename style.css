@@ -14,6 +14,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 400px) {
+  body {
+    font-size: 50%;
+  }
+}
+
 header {
   background-color: white;
   height: 12vh;
@@ -30,6 +36,12 @@ header {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  header {
+    padding: .3rem;
+  }
+}
+
 header .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -40,6 +52,12 @@ header .navbar {
 @media only screen and (max-width: 768px) {
   header .navbar {
     padding: .5rem 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header .navbar {
+    padding: .2rem .2rem;
   }
 }
 
@@ -62,6 +80,12 @@ header ul li {
 @media only screen and (max-width: 768px) {
   header ul li {
     padding-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header ul li {
+    padding: .7rem;
   }
 }
 
@@ -92,6 +116,13 @@ header .logo {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  header .logo h1 {
+    font-size: 1rem;
+    padding-top: .5rem;
+  }
+}
+
 header i {
   font-size: 1.5rem;
   color: red;
@@ -101,6 +132,12 @@ header i {
 @media only screen and (max-width: 768px) {
   header i {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  header i {
+    font-size: .8rem;
   }
 }
 
@@ -119,9 +156,22 @@ header button {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  header button {
+    font-size: .5rem;
+  }
+}
+
 .Landing-page {
   background-color: #E7272D;
   height: 100vh;
+}
+
+@media only screen and (max-width: 400px) {
+  .Landing-page {
+    padding-top: .9rem;
+    height: 90vh;
+  }
 }
 
 .Landing-page ul {
@@ -138,6 +188,16 @@ header button {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .Landing-page ul {
+    padding: 3rem .3rem .7rem 0;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .Landing-page ul li {
   color: yellow;
   padding: 1.9rem;
@@ -149,9 +209,21 @@ header button {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .Landing-page ul li {
+    padding: 1rem;
+  }
+}
+
 .Landing-page ul .worth {
   margin-left: auto;
   color: white;
+}
+
+@media only screen and (max-width: 400px) {
+  .Landing-page ul .worth {
+    margin-left: initial;
+  }
 }
 
 .Landing-page ul .worth .circle {
@@ -166,6 +238,14 @@ header button {
 }
 
 @media only screen and (max-width: 768px) {
+  .Landing-page ul .worth .circle {
+    font-size: .9rem;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
   .Landing-page ul .worth .circle {
     font-size: .9rem;
     width: 70px;
@@ -193,8 +273,20 @@ header button {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .Landing-page ul .worth img {
+    height: 45vh;
+  }
+}
+
 .Landing-page .part1 {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .Landing-page .part1 {
+    padding: .5rem;
+  }
 }
 
 .Landing-page .part1 h3 {
@@ -204,6 +296,13 @@ header button {
 @media only screen and (max-width: 768px) {
   .Landing-page .part1 h3 {
     font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Landing-page .part1 h3 {
+    font-size: 1.3rem;
+    padding-top: 1.9rem;
   }
 }
 
@@ -217,6 +316,13 @@ header button {
 @media only screen and (max-width: 768px) {
   .Landing-page .part1 h2 {
     font-size: 3.8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .Landing-page .part1 h2 {
+    font-size: 1.8rem;
+    padding-top: 0;
   }
 }
 
@@ -245,6 +351,12 @@ header button {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  .Landing-page .part1 button {
+    font-size: .9rem;
+  }
+}
+
 main {
   background-color: white;
   display: -ms-grid;
@@ -256,10 +368,37 @@ main {
   overflow-x: hidden;
 }
 
+@media only screen and (max-width: 768px) {
+  main {
+    padding: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 main .about h1 {
   font-size: 3.4rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  main .about h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main .about h1 {
+    margin-top: 2rem;
+    margin-bottom: .8rem;
+  }
 }
 
 main .about h3 {
@@ -269,11 +408,37 @@ main .about h3 {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 768px) {
+  main .about h3 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main .about h3 {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+  }
+}
+
 main .about p {
   font-size: 1.0rem;
   font-weight: 400;
   margin-bottom: 2.4rem;
   color: #888888;
+}
+
+@media only screen and (max-width: 768px) {
+  main .about p {
+    font-size: .8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main .about p {
+    font-size: 1rem;
+  }
 }
 
 main .about button {
@@ -284,6 +449,19 @@ main .about button {
   border: none;
   background-color: red;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  main .about button {
+    font-size: .7rem;
+    padding: .7rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main .about button {
+    font-size: .9rem;
+  }
 }
 
 main .about button:hover {
@@ -300,6 +478,18 @@ main .Food {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  main .Food {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main .Food {
+    font-size: 1rem;
+  }
+}
+
 main .Food i {
   color: #e61a21;
   border-radius: 1.5rem;
@@ -309,8 +499,26 @@ main .Food i {
   font-size: 1.6rem;
 }
 
+@media only screen and (max-width: 768px) {
+  main .Food i {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  main .Food i {
+    font-size: 1.5rem;
+  }
+}
+
 main .Food p {
   font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  main .Food p {
+    font-size: 1rem;
+  }
 }
 
 .page3 {
@@ -321,8 +529,24 @@ main .Food p {
   grid-gap: 2rem;
   padding: 5.5rem;
   margin-top: 3rem;
-  height: 70vh;
+  height: 100vh;
   background-color: #F8F9FA;
+}
+
+@media only screen and (max-width: 768px) {
+  .page3 {
+    font-size: 1rem;
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page3 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 1rem;
+    padding-top: 3rem;
+  }
 }
 
 .page3 h1 {
@@ -332,14 +556,50 @@ main .Food p {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  .page3 h1 {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page3 h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .page3 p {
   padding-bottom: 1rem;
   font-size: 1rem;
   color: #888888;
 }
 
+@media only screen and (max-width: 768px) {
+  .page3 p {
+    font-size: .7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page3 p {
+    font-size: 1.2rem;
+  }
+}
+
 .page3 .book {
   padding-bottom: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .page3 .book {
+    padding-bottom: 3.9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page3 .book {
+    padding-bottom: 1rem;
+  }
 }
 
 .page3 button {
@@ -349,6 +609,19 @@ main .Food p {
   border: none;
   background-color: #E7262D;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .page3 button {
+    font-size: .7rem;
+    padding: .3rem .9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page3 button {
+    font-size: 1rem;
+  }
 }
 
 .page3 button:hover {
@@ -365,10 +638,26 @@ main .Food p {
 .page4 {
   padding: 1rem;
   padding-top: 5rem;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .page4 {
+    padding: .8rem;
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 {
+    margin-top: 17rem;
+    padding: 0;
+    padding-top: 7rem;
+  }
 }
 
 .page4 img {
-  border: none;
   border-radius: 1rem;
 }
 
@@ -383,10 +672,34 @@ main .Food p {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  .page4 .art h2 {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .art h2 {
+    font-size: 1.1rem;
+  }
+}
+
 .page4 .art h1 {
   font-size: 2.2rem;
   padding-bottom: 2rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .page4 .art h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .art h1 {
+    font-size: 2rem;
+  }
 }
 
 .page4 .Gallery {
@@ -397,6 +710,16 @@ main .Food p {
   grid-gap: 1rem;
 }
 
+@media only screen and (max-width: 400px) {
+  .page4 .Gallery {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: .5rem;
+    padding: .5rem;
+    height: 100vh;
+  }
+}
+
 .page4 .Gallery .item1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 5;
@@ -405,15 +728,56 @@ main .Food p {
   padding-left: 1.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page4 .Gallery .item1 {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .Gallery .item1 {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
 .page4 .Gallery .item1 img {
   height: 19rem;
   width: 19rem;
   border-radius: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page4 .Gallery .item1 img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .Gallery .item1 img {
+    height: 13rem;
+    width: 10rem;
+  }
+}
+
 .page4 .Gallery .item2 img {
   height: 23rem;
   width: 20rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .page4 .Gallery .item2 img {
+    height: 15rem;
+    width: 12rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .Gallery .item2 img {
+    height: 15rem;
+    width: 10rem;
+  }
 }
 
 .page4 .Gallery .item3 {
@@ -422,9 +786,29 @@ main .Food p {
   min-height: 5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page4 .Gallery .item3 {
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .Gallery .item3 {
+    position: relative;
+  }
+}
+
 .page4 .Gallery .item3 img {
   max-height: 25rem;
   max-width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .Gallery .item3 img {
+    position: absolute;
+    top: -7rem;
+    height: 10rem;
+  }
 }
 
 .page4 .item4 {
@@ -439,8 +823,45 @@ main .Food p {
   left: -.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page4 .item4 img {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .item4 img {
+    top: -10rem;
+    width: 100%;
+    height: 12rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .item5 {
+    position: relative;
+  }
+}
+
 .page4 .item5 img {
   height: 14rem;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .page4 .item5 img {
+    height: 8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .item5 img {
+    height: 11rem;
+    width: 100%;
+    position: absolute;
+    top: -10rem;
+  }
 }
 
 .page4 .item6 {
@@ -453,10 +874,39 @@ main .Food p {
   top: -9.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page4 .item6 img {
+    height: 15rem;
+    width: 10rem;
+    top: -8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page4 .item6 img {
+    top: -11rem;
+    width: 100%;
+  }
+}
+
 .page5 {
   padding: 3rem;
   background-color: #F8F9FA;
   padding-top: 4rem;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .page5 {
+    padding: 1rem;
+    padding-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page5 {
+    padding-top: 2rem;
+  }
 }
 
 .page5 .recipies {
@@ -468,11 +918,24 @@ main .Food p {
   padding-bottom: 1.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page5 .recipies h1 {
+    font-size: 1.3rem;
+  }
+}
+
 .page5 .recipies h2 {
   color: #999999;
   padding-bottom: 1rem;
   padding-top: 1rem;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .page5 .recipies h2 {
+    padding-bottom: .5rem;
+    font-size: .7rem;
+  }
 }
 
 .page5 .recipies ul {
@@ -482,11 +945,26 @@ main .Food p {
   display: flex;
 }
 
+@media only screen and (max-width: 400px) {
+  .page5 .recipies ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .page5 .recipies ul li {
   margin: 2rem;
   border: none;
   border-radius: .5rem;
   background: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .page5 .recipies ul li {
+    margin: 1rem;
+  }
 }
 
 .page5 .recipies ul li:hover {
@@ -524,11 +1002,37 @@ main .Food p {
   margin-bottom: 1.9rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page5 .recipies ul li .center img {
+    height: 9rem;
+    width: 9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page5 .recipies ul li .center img {
+    height: 14rem;
+    width: 17rem;
+  }
+}
+
 .page5 .recipies ul li h1 {
   padding: .5rem;
   font-size: 1.3rem;
   font-weight: 600;
-  padding-top: .5rem;
+  padding-top: .8rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .page5 .recipies ul li h1 {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page5 .recipies ul li h1 {
+    font-size: 1.3rem;
+  }
 }
 
 .page5 .recipies ul li h4 {
@@ -540,10 +1044,38 @@ main .Food p {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  .page5 .recipies ul li h4 {
+    font-size: .8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page5 .recipies ul li h4 {
+    padding-top: 0;
+    font-size: 1.2rem;
+    padding-bottom: .5rem;
+  }
+}
+
 .page5 .recipies ul li h3 {
   text-align: center;
   font-size: 1.2rem;
   padding-bottom: .7rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .page5 .recipies ul li h3 {
+    font-size: .9rem;
+    padding-bottom: .5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page5 .recipies ul li h3 {
+    font-size: 1.2rem;
+    padding-top: .3rem;
+  }
 }
 
 .page5 .recipies ul li .order {
@@ -559,8 +1091,33 @@ main .Food p {
   background-color: red;
 }
 
+@media only screen and (max-width: 768px) {
+  .page5 .recipies ul li .order button {
+    font-size: .7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page5 .recipies ul li .order button {
+    font-size: 1rem;
+  }
+}
+
 .page6 {
   padding: 5rem;
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .page6 {
+    padding: 3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page6 {
+    padding: 1rem;
+  }
 }
 
 .page6 .clients {
@@ -569,10 +1126,28 @@ main .Food p {
   padding-top: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .page6 .clients {
+    padding: 1rem;
+  }
+}
+
 .page6 .clients h4 {
   color: #999999;
   font-size: 1rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .page6 .clients h4 {
+    font-size: .7rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page6 .clients h4 {
+    font-size: 1rem;
+  }
 }
 
 .page6 .clients h1 {
@@ -580,15 +1155,50 @@ main .Food p {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 768px) {
+  .page6 .clients h1 {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page6 .clients h1 {
+    font-size: 1.5rem;
+  }
+}
+
 .page6 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
   list-style-type: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .page6 ul {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 .page6 ul li {
   padding: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .page6 ul li img {
+    height: 20rem;
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page6 ul li img {
+    height: 24rem;
+    width: 22rem;
+  }
 }
 
 .page6 ul li p {
@@ -598,10 +1208,30 @@ main .Food p {
   color: #2d2d43;
 }
 
+@media only screen and (max-width: 768px) {
+  .page6 ul li p {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .page6 ul li p {
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+}
+
 .page6 ul li h1 {
   padding-top: .8rem;
   font-size: 1.5rem;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .page6 ul li h1 {
+    font-size: 1.2rem;
+    padding-top: .5rem;
+  }
 }
 
 .page6 ul li h3 {
@@ -610,17 +1240,42 @@ main .Food p {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 768px) {
+  .page6 ul li h3 {
+    font-size: .7rem;
+  }
+}
+
 footer {
   background-color: #212529;
   color: white;
+  overflow-x: hidden;
 }
 
 footer h4 {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  footer h4 {
+    font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer h4 {
+    font-size: 1rem;
+  }
+}
+
 footer .last {
-  padding: 2rem;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 400px) {
+  footer .last {
+    padding: 0;
+  }
 }
 
 footer .last ul {
@@ -629,6 +1284,15 @@ footer .last ul {
   display: flex;
   list-style-type: none;
   padding-top: 1.5rem;
+}
+
+@media only screen and (max-width: 400px) {
+  footer .last ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 
 footer .last ul li {
@@ -642,9 +1306,21 @@ footer .last ul li p {
   font-size: 1rem;
 }
 
-footer .last ul li .nub {
+@media only screen and (max-width: 768px) {
+  footer .last ul li p {
+    font-size: .7rem;
+  }
+}
+
+footer .last ul li .numb {
   color: white;
   font-size: 1.4;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .last ul li .numb {
+    font-size: 1rem;
+  }
 }
 
 footer .last ul li h3 {
@@ -656,10 +1332,22 @@ footer .last ul li .open P {
   font-size: 1rem;
 }
 
+@media only screen and (max-width: 768px) {
+  footer .last ul li .open P {
+    font-size: .7rem;
+  }
+}
+
 footer .last ul li a {
   text-decoration: none;
   color: #999999;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .last ul li a {
+    font-size: 1rem;
+  }
 }
 
 footer .last ul li a:hover {
@@ -673,13 +1361,31 @@ footer .last ul .middle1 {
   border-bottom: none;
 }
 
+@media only screen and (max-width: 400px) {
+  footer .last ul .middle1 {
+    border: none;
+  }
+}
+
 footer .last ul .middle2 {
   border-right: solid;
   border-width: .1rem;
 }
 
+@media only screen and (max-width: 400px) {
+  footer .last ul .middle2 {
+    border: none;
+  }
+}
+
 footer .divider {
   padding: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  footer .divider {
+    padding: 1rem;
+  }
 }
 
 footer .divider hr {
@@ -689,6 +1395,12 @@ footer .divider hr {
   height: .1rem;
 }
 
+@media only screen and (max-width: 400px) {
+  footer .divider hr {
+    height: 1rem;
+  }
+}
+
 footer .clone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -696,11 +1408,23 @@ footer .clone {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  footer .clone {
+    font-size: 1rem;
+  }
+}
+
 footer .clone .reserved {
   color: white;
   font-size: 1rem;
   color: #bbbbbb;
   font-size: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .clone .reserved {
+    font-size: .8rem;
+  }
 }
 
 footer .clone .social {
@@ -711,6 +1435,12 @@ footer .clone .social i {
   padding-right: 1rem;
   font-size: 1.2rem;
   color: #999999;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .clone .social i {
+    font-size: 1rem;
+  }
 }
 
 footer .clone .social i:hover {
