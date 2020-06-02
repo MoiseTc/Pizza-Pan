@@ -1338,6 +1338,12 @@ footer .last ul li .open P {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  footer .last ul li .open P {
+    font-size: 1.2rem;
+  }
+}
+
 footer .last ul li a {
   text-decoration: none;
   color: #999999;
@@ -1397,7 +1403,7 @@ footer .divider hr {
 
 @media only screen and (max-width: 400px) {
   footer .divider hr {
-    height: 1rem;
+    height: .1rem;
   }
 }
 
@@ -1414,11 +1420,19 @@ footer .clone {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  footer .clone {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 footer .clone .reserved {
-  color: white;
   font-size: 1rem;
   color: #bbbbbb;
-  font-size: 400;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1427,8 +1441,24 @@ footer .clone .reserved {
   }
 }
 
+@media only screen and (max-width: 400px) {
+  footer .clone .reserved {
+    font-size: .8rem;
+    text-align: center;
+    padding-bottom: .5rem;
+  }
+}
+
 footer .clone .social {
   margin-left: auto;
+}
+
+@media only screen and (max-width: 400px) {
+  footer .clone .social {
+    margin-left: 0;
+    text-align: center;
+    padding-bottom: .5rem;
+  }
 }
 
 footer .clone .social i {
@@ -1440,6 +1470,12 @@ footer .clone .social i {
 @media only screen and (max-width: 768px) {
   footer .clone .social i {
     font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  footer .clone .social i {
+    font-size: 1.2rem;
   }
 }
 

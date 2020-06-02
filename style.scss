@@ -959,6 +959,9 @@ footer{
                             @media only screen and (max-width: 768px) {
                                 font-size: .7rem;
                             }
+                            @media only screen and (max-width: 400px) {
+                                font-size: 1.2rem;
+                            }
                     }
                 }
                 a{
@@ -1006,7 +1009,7 @@ footer{
             background-color:#999999;
             height: .1rem;
             @media only screen and (max-width: 400px) {
-                height: 1rem;
+                height: .1rem;
             }
         }
     }
@@ -1017,26 +1020,41 @@ footer{
             @media only screen and (max-width: 768px) {
                 font-size: 1rem;
             }
+            @media only screen and (max-width: 400px) {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
 
         .reserved{
-            color: white;
             font-size: 1rem;
             color: #bbbbbb;
-            font-size: 400;
+            font-weight: 400;
             @media only screen and (max-width: 768px) {
                 font-size: .8rem;
              }
+             @media only screen and (max-width: 400px) {
+                font-size: .8rem;
+                text-align: center;
+                padding-bottom: .5rem;
+            }
         }
 
         .social{
             margin-left: auto;
-
+            @media only screen and (max-width: 400px) {
+                margin-left:0;
+                text-align: center;
+                padding-bottom: .5rem;
+            }
             i{
                 padding-right: 1rem;
                 font-size: 1.2rem;
                 color: #999999;
                     @media only screen and (max-width: 768px) {
                         font-size: 1rem;
+                    }
+                    @media only screen and (max-width: 400px) {
+                        font-size: 1.2rem;
                     }
 
                 &:hover{
